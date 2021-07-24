@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  worker:
+    build: .
+    command: python Worker.py
+    restart: always
+
+  redis:
+    image: "redis"
+    restart: always
